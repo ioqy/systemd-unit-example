@@ -1,0 +1,11 @@
+[Unit]
+Description=Mount example
+
+[Mount]
+What=/dev/disk/by-uuid/xxxx-xxxx-xxxx-xxxx
+Where=/mnt/example
+Type=ext4
+DirectoryMode=0400
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,27 @@
+[Unit]
+Description=
+#After=network-online.target
+#RequiresMountsFor=
+
+#StartLimitIntervalSec=
+#StartLimitBurst=3
+
+[Service]
+#Type=simple
+Type=oneshot
+
+#Restart=on-failure
+#RestartSec=60
+
+Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+
+ExecStart=
+WorkingDirectory=
+#KillSignal=SIGINT
+
+# Install section not needed for timers
+#[Install]
+# for user units (~/.config/systemd/user):
+#WantedBy=basic.target
+# for system units (/etc/systemd/system):
+#WantedBy=multi-user.target
