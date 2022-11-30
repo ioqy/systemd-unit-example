@@ -13,9 +13,17 @@ Type=oneshot
 #Restart=on-failure
 #RestartSec=60
 
+# Lower CPU and I/O priority
+#Nice=19
+#CPUSchedulingPolicy=batch
+#IOSchedulingClass=best-effort
+#IOSchedulingPriority=7
+#IOWeight=100
+
 Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 ExecStart=
+#ExecStart=systemd-inhibit --who="" --why="" program
 WorkingDirectory=
 #KillSignal=SIGINT
 
