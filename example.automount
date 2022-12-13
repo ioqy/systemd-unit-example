@@ -1,0 +1,9 @@
+[Unit]
+Description=Automount example
+
+[Automount]
+Where=/mnt/example
+TimeoutIdleSec=60
+
+[Install]
+WantedBy=multi-user.target
