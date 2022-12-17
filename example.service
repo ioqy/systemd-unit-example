@@ -1,6 +1,11 @@
 [Unit]
 Description=
+
+# Only run when network is connected
 #After=network-online.target
+#Wants=network-online.target
+
+# Only run when mount point is available
 #RequiresMountsFor=
 
 #StartLimitIntervalSec=
@@ -24,7 +29,7 @@ Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 ExecStart=
 #ExecStart=systemd-inhibit --who="" --why="" program
-WorkingDirectory=
+#WorkingDirectory=
 #KillSignal=SIGINT
 
 # Install section not needed for timers
