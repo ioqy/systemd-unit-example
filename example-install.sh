@@ -22,7 +22,7 @@ systemctl list-timers --all
 systemctl --user daemon-reload
 systemctl --user start example.service
 systemctl --user enable example.service
-systemctl status --user example.service
+systemctl --user status example.service
 
 # Timer as user
 systemctl --user daemon-reload
@@ -31,3 +31,6 @@ systemctl --user status automated-backup.timer
 
 # List timers for user
 systemctl --user list-timers --all
+
+# Syntax check
+systemd-analyze [--user] verify example.service
