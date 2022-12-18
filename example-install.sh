@@ -34,3 +34,7 @@ systemctl --user list-timers --all
 
 # Syntax check
 systemd-analyze [--user] verify example.service
+
+# Escape strings for usage in systemd mount unit names
+systemd-escape mnt/example
+
