@@ -1,0 +1,11 @@
+[Unit]
+Description=
+
+[Path]
+PathChanged=/run/example
+Unit=example.service
+MakeDirectory=true
+DirectoryMode=0733
+
+[Install]
+WantedBy=multi-user.target
