@@ -38,3 +38,5 @@ systemd-analyze [--user] verify example.service
 # Escape strings for usage in systemd mount unit names
 systemd-escape mnt/example
 
+# Calculate the next 10 elapses of a OnCalendar expression for a timer
+systemd-analyze calendar --iterations=10
