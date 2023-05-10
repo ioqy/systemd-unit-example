@@ -15,6 +15,9 @@ Description=
 #Type=simple
 Type=oneshot
 
+#User=
+#Group=
+
 #Restart=on-failure
 #RestartSec=60
 
