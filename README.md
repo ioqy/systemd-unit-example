@@ -136,7 +136,7 @@ systemd-analyze calendar --iterations=10 <expression>
 
 # 6. Examples
 
-### Add a new service
+## Add a new service
 
 1. Create the unit file
 
@@ -162,4 +162,36 @@ systemd-analyze calendar --iterations=10 <expression>
 
     ```bash
     systemctl status --user example.service
+    ```
+
+## Remove a service
+
+1. Remove all drop in files
+
+    ```bash
+    systemctl revert --user example.service
+    ```
+
+2. Uninstall the service and stop it
+
+    ```bash
+    systemctl disable --user --now example.service
+    ```
+
+3. Delete the unit file
+
+    ```bash
+    rm "$(systemctl show --user -P FragmentPath test.service)"
+    ```
+
+4. Reload the daemon
+
+    ```bash
+    systemctl daemon-reload --user
+    ```
+
+5. Reset a possible "failed" state
+
+    ```bash
+    systemctl reset-failed --user example.service
     ```
