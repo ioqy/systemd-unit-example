@@ -195,3 +195,18 @@ systemd-analyze calendar --iterations=10 <expression>
     ```bash
     systemctl reset-failed --user example.service
     ```
+
+# 7. Manuals
+
+[systemd.unit(5)](https://manpages.debian.org/bullseye/systemd/systemd.unit.5.en.html)  
+[systemd.mount(5)](https://manpages.debian.org/bullseye/systemd/systemd.mount.5.en.html)  
+[systemd.automount(5)](https://manpages.debian.org/bullseye/systemd/systemd.automount.5.en.html)  
+[systemd.path(5)](https://manpages.debian.org/bullseye/systemd/systemd.path.5.en.html)  
+[systemd.service(5)](https://manpages.debian.org/bullseye/systemd/systemd.service.5.en.html)  
+[systemd.timer(5)](https://manpages.debian.org/bullseye/systemd/systemd.timer.5.en.html)
+
+[systemctl(1)](https://manpages.debian.org/bullseye/systemd/systemctl.1.en.html)
+
+[systemd.time(7)](https://manpages.debian.org/bullseye/systemd/systemd.time.7.en.html)
+
+[systemd-analyze(1)](https://manpages.debian.org/bullseye/systemd/systemd-analyze.1.en.html)
