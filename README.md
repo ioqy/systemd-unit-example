@@ -1,7 +1,7 @@
 # 1. Paths
 For system units, managed by the root user, use the directory `/etc/systemd/system`.
 
-For user managed units use the directory `/home/$USER/.config/systemd/user`.
+For user managed units use the directory `~/.config/systemd/user`.
 
 Units that come from installed packages normally use the directory `/usr/lib/systemd/system`.
 
@@ -12,7 +12,7 @@ To override existing preconfigured units use the command `systemctl edit <unit>`
 
 ## User-Mode
 
-To run the service manager (`systemctl`) in user-mode for user managed units in the `/home/$USER/.config/systemd/user` directory, add the `--user` parameter to every execution like this:
+To run the service manager (`systemctl`) in user-mode for user managed units in the `~/.config/systemd/user` directory, add the `--user` parameter to every execution like this:
 
 ```bash
 systemctl status --user <unit>
