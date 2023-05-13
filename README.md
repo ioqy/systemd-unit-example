@@ -196,17 +196,17 @@ systemd-analyze calendar --iterations=10 <expression>
     systemctl reset-failed --user example.service
     ```
 
-# 7. Manuals
+# 7. Man pages
 
-[systemd.unit(5)](https://manpages.debian.org/bullseye/systemd/systemd.unit.5.en.html)  
-[systemd.mount(5)](https://manpages.debian.org/bullseye/systemd/systemd.mount.5.en.html)  
-[systemd.automount(5)](https://manpages.debian.org/bullseye/systemd/systemd.automount.5.en.html)  
-[systemd.path(5)](https://manpages.debian.org/bullseye/systemd/systemd.path.5.en.html)  
-[systemd.service(5)](https://manpages.debian.org/bullseye/systemd/systemd.service.5.en.html)  
-[systemd.timer(5)](https://manpages.debian.org/bullseye/systemd/systemd.timer.5.en.html)
+[systemd.unit](https://manpages.debian.org/systemd.unit)  
+[systemd.mount](https://manpages.debian.org/systemd.mount)  
+[systemd.automount](https://manpages.debian.org/systemd.automount)  
+[systemd.path](https://manpages.debian.org/systemd.path)  
+[systemd.service](https://manpages.debian.org/systemd.service)  
+[systemd.timer](https://manpages.debian.org/systemd.timer)
 
-[systemctl(1)](https://manpages.debian.org/bullseye/systemd/systemctl.1.en.html)
+[systemctl](https://manpages.debian.org/systemctl)
 
-[systemd.time(7)](https://manpages.debian.org/bullseye/systemd/systemd.time.7.en.html)
+[systemd.time](https://manpages.debian.org/systemd.time)
 
-[systemd-analyze(1)](https://manpages.debian.org/bullseye/systemd/systemd-analyze.1.en.html)
+[systemd-analyze](https://manpages.debian.org/systemd-analyze)
