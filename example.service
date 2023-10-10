@@ -15,6 +15,33 @@ Description=
 #Type=simple
 Type=oneshot
 
+# Security hardening
+CapabilityBoundingSet=
+DevicePolicy=closed
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+NoNewPrivileges=yes
+PrivateDevices=yes
+PrivateTmp=yes
+ProtectClock=yes
+ProtectControlGroups=yes
+ProtectHome=read-only
+ProtectKernelModules=yes
+ProtectKernelTunables=yes
+ProtectProc=invisible
+# ProtectSystem the following values mount the following directories as read-only
+# yes: /usr/, /boot/ and /efi/
+# full: everything from "yes" and /etc/
+# strict: everything except /dev/, /proc/ and /sys/
+ProtectSystem=strict
+# Remove "AF_INET" and "AF_INET6" to prevent network access or restrict to IPv4/IPv6
+RestrictAddressFamilies=AF_UNIX AF_NETLINK AF_INET AF_INET6
+RestrictNamespaces=yes
+RestrictRealtime=yes
+RestrictSUIDSGID=yes
+# Space separated list of paths allowed for writing
+ReadWritePaths=
+
 #User=
 #Group=
 
@@ -28,7 +55,7 @@ Type=oneshot
 #IOSchedulingPriority=7
 #IOWeight=100
 
-Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+ExecSearchPath=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 ExecStart=
 #ExecStart=systemd-inhibit --who="" --why="" program
