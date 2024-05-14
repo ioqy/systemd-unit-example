@@ -8,8 +8,9 @@ Description=
 # Only run when mount point is available
 #RequiresMountsFor=
 
-#StartLimitIntervalSec=
-#StartLimitBurst=3
+# If RestartSec * StartLimitBurst exceeds StartLimitIntervalSec the service restarts indefinetly and does not trigger the OnFailure unit
+StartLimitIntervalSec=2h
+StartLimitBurst=3
 
 [Service]
 #Type=simple
@@ -45,8 +46,8 @@ ReadWritePaths=
 #User=
 #Group=
 
-#Restart=on-failure
-#RestartSec=60
+Restart=on-failure
+RestartSec=10m
 
 # Lower CPU and I/O priority
 #Nice=19
